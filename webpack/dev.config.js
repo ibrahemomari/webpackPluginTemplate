@@ -29,6 +29,25 @@ const WebpackConfig = {
     buildfire: 'buildfire'
   },
 
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
+  },
+
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'control/content/index.html',
@@ -70,16 +89,16 @@ const WebpackConfig = {
     }], {
       ignore: ['*.js', '*.html', '*.md']
     }),
-    new CopyWebpackPlugin([{
-      from: path.join(__dirname, '../../../styles'),
-      to: path.join(__dirname, '../styles'),
-    }, {
-      from: path.join(__dirname, '../../../scripts'),
-      to: path.join(__dirname, '../scripts'),
-    }, {
-      from: path.join(__dirname, '../../../fonticons'),
-      to: path.join(__dirname, '../fonticons'),
-    }])
+    // new CopyWebpackPlugin([{
+    //   from: path.join(__dirname, '../../../styles'),
+    //   to: path.join(__dirname, '../styles'),
+    // }, {
+    //   from: path.join(__dirname, '../../../scripts'),
+    //   to: path.join(__dirname, '../scripts'),
+    // }, {
+    //   from: path.join(__dirname, '../../../fonticons'),
+    //   to: path.join(__dirname, '../fonticons'),
+    // }])
   ],
 
   devServer: {
@@ -89,7 +108,7 @@ const WebpackConfig = {
     contentBase: path.join(__dirname, '../dist'),
     publicPath: '/',
     quiet: false,
-    noInfo: true,
+    noInfo: false,
     disableHostCheck: true,
   }
 

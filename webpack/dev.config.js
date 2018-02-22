@@ -89,16 +89,16 @@ const WebpackConfig = {
     }], {
       ignore: ['*.js', '*.html', '*.md']
     }),
-    // new CopyWebpackPlugin([{
-    //   from: path.join(__dirname, '../../../styles'),
-    //   to: path.join(__dirname, '../styles'),
-    // }, {
-    //   from: path.join(__dirname, '../../../scripts'),
-    //   to: path.join(__dirname, '../scripts'),
-    // }, {
-    //   from: path.join(__dirname, '../../../fonticons'),
-    //   to: path.join(__dirname, '../fonticons'),
-    // }])
+    new CopyWebpackPlugin([{
+       from: path.join(__dirname, '../../../styles'),
+       to: path.join(__dirname, '../styles'),
+     }, {
+       from: path.join(__dirname, '../../../scripts'),
+       to: path.join(__dirname, '../scripts'),
+     }, {
+       from: path.join(__dirname, '../../../fonticons'),
+       to: path.join(__dirname, '../fonticons'),
+     }])
   ],
 
   devServer: {

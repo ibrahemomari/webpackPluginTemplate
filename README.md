@@ -11,7 +11,7 @@ The following template uses webpack in order to provide module support and minif
 Be sure to have the latest [BuildFire CLI](https://github.com/BuildFire/sdk-cli) installed in your system.
 
     # Download the latest SDK if you haven't already
-    $ buildfire create
+    $ buildfire init
 
     # Once inside the SDK's folder
     $ buildfire init webpack <pluginName>

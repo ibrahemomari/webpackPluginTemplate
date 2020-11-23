@@ -14,7 +14,7 @@ Be sure to have the latest [BuildFire CLI](https://github.com/BuildFire/sdk-cli)
     $ buildfire init
 
     # Once inside the SDK's folder
-    $ buildfire init webpack <pluginName>
+    $ buildfire plugin init <pluginName> webpack
 
 ## Usage
 Be sure to be in the plugin's folder while running the following commands:
@@ -22,4 +22,6 @@ Be sure to be in the plugin's folder while running the following commands:
 * `$ npm install` - Install all plugin dependencies
 * `$ npm start` - Runs the plugin in the [Plugin Tester](https://github.com/BuildFire/sdk/wiki/How-to-test-your-Plugin-locally)
 * `$ npm run-script build` - Builds the plugin to be [submitted to the Marketplace](https://github.com/BuildFire/sdk/wiki/How-to-submit-your-plugin)
+
+You need to have BuildFire SDK running as well when testing plugins. you can learn more here: https://github.com/BuildFire/sdk/wiki/How-to-test-your-Plugin-locally
 

@@ -10,7 +10,7 @@ const WebpackConfig = {
 
   entry: {
     //  Webpack dev server
-    'devServer': `webpack-dev-server/client?http://0.0.0.0:8080`,
+    'devServer': `webpack-dev-server/client?http://127.0.0.1:8080`,
 
     // Plugin entry points
     'control/content/content': path.join(__dirname, '../src/control/content/content.js'),
@@ -22,7 +22,7 @@ const WebpackConfig = {
   output: {
     path: path.join(__dirname, '../'),
     filename: '[name].js',
-    publicPath: 'http://0.0.0.0:8080/'
+    publicPath: 'http://127.0.0.1:8080/'
   },
 
   externals: {
@@ -103,7 +103,7 @@ const WebpackConfig = {
 
   devServer: {
     port: 8080,
-    host: '0.0.0.0',
+    host: '127.0.0.1',
     inline: true,
     contentBase: path.join(__dirname, '../dist'),
     publicPath: '/',

@@ -1,0 +1,33 @@
+.subTitle {
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.subSectionTitle {
+    font-weight: 700;
+}
+
+textarea:invalid,
+input:invalid {
+    background-color: lightpink;
+}
+
+.hidden {
+    display: none;
+}
+
+#deleteButton {
+    padding-right: 25px;
+    margin-top: 5px;
+}
+
+#stringsContainer {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 1rem;
+}
+
+#saveButton {
+    margin-top: 1.5rem;
+}

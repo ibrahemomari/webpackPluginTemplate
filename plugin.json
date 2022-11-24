@@ -4,15 +4,21 @@
   "pluginDescription": "BuildFire plugin template for Webpack",
   "supportEmail":"support@buildfire.com",
   "control": {
-    "content":{
-      "enabled":true
+    "content": {
+      "enabled": true
     },
-    "design":{
-      "enabled":false
+    "design": {
+      "enabled": false
     },
-    "settings":{
-      "enabled":false
-    }
+    "settings": {
+      "enabled": true
+    },
+    "customTabs": [
+      {
+        "title": "Language",
+        "url": "/strings/index.html"
+      }
+    ]
   },
   "widget":{},
   "features" : [],

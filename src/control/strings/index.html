@@ -15,23 +15,17 @@
   <link href="../../../../styles/helper.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/bf_base.css">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./style.css">
   <!-- JS -->
   <script src="../../../../scripts/buildfire.min.js"></script>
+  <script src="../../../../scripts/tinymce/tinymce.min.js"></script>
 </head>
 <body>
-  <section class="slide-in">
-    <form class="form-horizontal" onsubmit="return false;">
-      <div class="flex-row form-group space-between  align-items-start">
-        <label for="apiInput" class="col-xs-4 text-left">Barcode Scanner API Key
-        </label>
-        <input class="input col-xs-5" id="apiInput" autocomplete="off" type="text">
-        <button type="button" class="col-xs-2 btn btn-success" id="saveButton">Save</button>
-    </form>
-    </div>
-  </section>
+  <div class="main-content clearfix" id="stringsContainer">loading...</div>
+  <a class="btn btn-success pull-right hidden" id="saveButton">Save</a>
 
   <!--
-    Do not include the 'settings.js' script tag!
+    Do not include the 'strings.js' script tag!
     Webpack will inject it automatically to this html's body
   -->
 </body>

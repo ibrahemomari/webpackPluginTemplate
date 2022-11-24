@@ -1,0 +1,49 @@
+
+.screen {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* home style */
+#home #entriesList .listView-items:last-child {
+    margin-bottom: 5rem;
+}
+
+#home .buttons-container {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+#home .buttons-container button {
+    background-color: var(--bf-theme-success) !important;
+}
+
+html[safe-area="true"] #home .buttons-container {
+    bottom: calc(0px + constant(safe-area-inset-bottom)) !important;
+    bottom: calc(0px + env(safe-area-inset-bottom)) !important;
+}
+
+/* widget component for testing */
+#home .banner-container{
+    width: 100%;
+    padding: 1rem;
+    height: 20rem;
+}
+#home .banner-container .widget-component{
+    box-shadow: 0 0 5px  rgb(165, 165, 165);
+    background-color: rgba(0, 0, 0, 0.16);
+    height: 15rem;
+    
+}
